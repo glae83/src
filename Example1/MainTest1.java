@@ -6,7 +6,7 @@ public class MainTest1 {
     public static void main(String[] args) {
         byte[][] arr = new byte[5][5];
         int[] arr1 = {1, 2, 3, 4, 5, 6, 7};
-        int shift = 8;
+        int shift = 30;
         matrix(arr);
 //        countMax(arr);
 //        minMax(arr1);
