@@ -95,15 +95,15 @@ public class MainTest1 {
         System.out.println(Arrays.toString(arr1));
     }
 
-    public static void test1(){
-        int z;
-        int count = 11;
-
-        z = count % 5 ;
-        System.out.println(z);
-
-
-    }
+//    public static void test1(){
+//        int z;
+//        int count = 11;
+//
+//        z = count % 5 ;
+//        System.out.println(z);
+//
+//
+//    }
 
 }
 
