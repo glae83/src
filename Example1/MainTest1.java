@@ -14,9 +14,7 @@ public class MainTest1 {
         shiftMatrix(arr1, shift);
 //        test1();
     }
-    /**
-     * @param arr
-     */
+
     public static void matrix(byte[][] arr) {
         for (int i = 0; i < arr.length; i++) {
             for (int j = 0; j < arr[i].length; j++) {
