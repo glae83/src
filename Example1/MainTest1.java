@@ -1,9 +1,12 @@
 package Example1;
 
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class MainTest1 {
+
     public static void main(String[] args) {
+
         byte[][] arr = new byte[5][5];
         int[] arr1 = {1, 2, 3, 4, 5, 6, 7};
         int shift = 30;
@@ -11,7 +14,7 @@ public class MainTest1 {
 //        countMax(arr);
 //        minMax(arr1);
 //        System.out.println(count(arr1));
-        shiftMatrix(arr1, shift);
+//        shiftMatrix(arr1, shift);
 //        test1();
     }
 
@@ -93,6 +96,9 @@ public class MainTest1 {
             }
         }
         System.out.println(Arrays.toString(arr1));
+    }
+    public static void test2(){
+
     }
 
 //    public static void test1(){
