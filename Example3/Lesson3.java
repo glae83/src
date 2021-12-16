@@ -10,11 +10,15 @@ public class Lesson3 {
     public static void main(String[] args) {
         sc = new Scanner(System.in);
         random = new Random();
-        yesNoTo();
+        String[] words = {"apple", "orange", "lemon", "banana", "apricot", "avocado", "broccoli", "carrot", "cherry", "garlic", "grape", "melon", "leak", "kiwi", "mango", "mushroom", "nut", "olive", "pea", "peanut", "pear", "pepper", "pineapple", "pumpkin", "potato"};
+//        yesNoTo();
+
+        yesNoWord(words);
     }
 /**
  * угадай числ от 0 до 9
  * */
+//region Угадать число
     public static void yesNoTo(){
             int userNumber;
             boolean yesNo;
@@ -56,5 +60,29 @@ public class Lesson3 {
             }
             while (userNumber!=0);
     }
+    //endregion
 
+public static void yesNoWord(String words []){
+    int word = random.nextInt(words.length);
+    do{
+        System.out.println("Угадай слово");
+        String userWord = sc.toString();
+        String robotWord = words[word];
+        String exitWord = "###############";
+        for (int i = 0; i < userWord.length(); i++) {
+            if (userWord.charAt(i) == robotWord.charAt(i)) {
+//                exitWord.charAt(i) = robotWord.charAt(i);
+
+            }
+        }
+    }
+    while ()
+
+
+
+    for (int i = 0; i < words.length; i++) {
+        int word = random.nextInt(words.length);
+        System.out.println(word);
+    }
+}
     }
