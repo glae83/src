@@ -1,5 +1,6 @@
 package Example3;
 
+import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -11,8 +12,7 @@ public class Lesson3 {
         sc = new Scanner(System.in);
         random = new Random();
         String[] words = {"apple", "orange", "lemon", "banana", "apricot", "avocado", "broccoli", "carrot", "cherry", "garlic", "grape", "melon", "leak", "kiwi", "mango", "mushroom", "nut", "olive", "pea", "peanut", "pear", "pepper", "pineapple", "pumpkin", "potato"};
-//        yesNoTo();
-
+//      yesNoTo();
         yesNoWord(words);
     }
 /**
@@ -64,25 +64,36 @@ public class Lesson3 {
 
 public static void yesNoWord(String words []){
     int word = random.nextInt(words.length);
-    do{
+//    do{
         System.out.println("Угадай слово");
-        String userWord = sc.toString();
+    System.out.println(words[word]);
         String robotWord = words[word];
+        String userWord = sc.next();
+//        String robotWord = words[word];
         String exitWord = "###############";
+//        System.out.println(words[word]);
+    String [] wordSplit = userWord.split("");
+    String [] wordRobotSplit = robotWord.split("");
+        System.out.println(userWord.length());
         for (int i = 0; i < userWord.length(); i++) {
-            if (userWord.charAt(i) == robotWord.charAt(i)) {
-//                exitWord.charAt(i) = robotWord.charAt(i);
+            if (wordSplit[i] == wordRobotSplit[i]){
+
+//            }
+//            if (userWord.charAt(i) == robotWord.charAt(i)) {
+////              exitWord.charAt(i) = robotWord.charAt(i);
+                System.out.println("good"); break;
 
             }
+            System.out.println(Arrays.toString(wordSplit));
         }
-    }
-    while ()
+//    }
+//    while ()
 
 
 
-    for (int i = 0; i < words.length; i++) {
-        int word = random.nextInt(words.length);
-        System.out.println(word);
-    }
+//    for (int i = 0; i < words.length; i++) {
+//        int word = random.nextInt(words.length);
+//        System.out.println(word);
+//    }
 }
     }
