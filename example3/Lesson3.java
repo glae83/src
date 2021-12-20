@@ -144,7 +144,7 @@ public class Lesson3 {
                     k++;
                 }
             }
-            if(z!=robotWord.length()){
+            if (z!=robotWord.length()){
             for (int i = 0; i < 15 - k; i++) {
                 System.out.print("#");
             }}
