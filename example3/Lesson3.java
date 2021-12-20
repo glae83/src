@@ -150,6 +150,7 @@ public class Lesson3 {
             }}
 //            System.out.println(z+" "+robotWord.length());
         } while (z != robotWord.length());
+        System.out.println();
     }
 }
 
